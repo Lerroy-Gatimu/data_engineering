@@ -33,3 +33,26 @@ def user_Details (user):
   print ("Age:", user["Age"])
 
 user_Details (user_details)
+
+'''
+Arbitrary Arguments - *args
+If you do not know how many arguments will be passed into your function, add a * before the parameter name.
+This way, the function will receive a tuple of arguments and can access the items accordingly
+'''
+def multiple_parameters (*ages):
+  print (f"The ages of the children are as follows: {ages}")
+  
+multiple_parameters (2,4,6)  
+
+'''
+What is *args?
+The *args parameter allows a function to accept any number of positional arguments.
+Inside the function, args becomes a tuple containing all the passed arguments
+'''
+def my_function(*args):
+  print("Type:", type(args))
+  print("First argument:", args[0])
+  print("Second argument:", args[1])
+  print("All arguments:", args)
+
+my_function("Emil", "Tobias", "Linus")

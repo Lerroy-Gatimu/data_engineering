@@ -1,0 +1,139 @@
+SELECT - extracts data from a database
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index
+
+SELECT:
+SELECT column1, column2, ...
+FROM table_name;
+
+SELECT DISTINCT:
+The SELECT DISTINCT statement is used to return only distinct (unique) values.
+In a table, a column may contains many duplicate values - and sometimes you only want to list the distinct values.
+Select all the distinct (unique) countries from the "Customers" table:
+SELECT DISTINCT Country FROM Customers;
+Syntax:
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+
+By using the COUNT() function with the DISTINCT keyword, we can count the number of unique countries.
+Example
+SELECT COUNT(DISTINCT Country) FROM Customers;
+
+WHERE:
+The WHERE clause is used to filter records.
+The WHERE clause is used to extract only those records that fulfill a specific condition.
+Here we select all customers from Mexico:
+SELECT * FROM Customers
+WHERE Country = 'Mexico';
+Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+SQL requires single quotes around text values (most database systems will also allow double quotes).
+However, numeric fields should not be enclosed in quotes:
+
+The following operators can be used in the WHERE clause:
+=	Equal	
+>	Greater than	
+<	Less than	
+>=	Greater than or equal	
+<=	Less than or equal	
+<>	Not equal. Note: In some versions of SQL this operator may be written as !=	
+BETWEEN	Between a certain range	
+LIKE	Search for a pattern	
+IN	To specify multiple possible values for a column
+
+SQL ORDER BY
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+The ORDER BY keyword sorts the result-set in ascending order (ASC) by default.
+Sort the products from lowest to highest price:
+SELECT * FROM Products
+ORDER BY Price;
+
+Syntax
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+
+Sort the products from highest to lowest price:
+SELECT * FROM Products
+ORDER BY Price DESC;
+
+For string values, the ORDER BY keyword will sort the values in the column alphabetically:
+Example
+Sort the ProductName column in alphabetically order:
+SELECT * FROM Products
+ORDER BY ProductName;
+
+Sort the ProductName column in descending alphabetically order:
+SELECT * FROM Products
+ORDER BY ProductName DESC;
+
+ORDER BY Several Columns
+The following SQL statement selects all customers from the "Customers" table - and sorts it by the "Country" and the "CustomerName" column.
+This means that it sorts it first by Country, and if some records have the same Country, it sorts them by CustomerName:
+Example
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+
+Combine ASC and DESC
+The following SQL statement selects all customers from the "Customers" table, and sorts it ASCENDING by the "Country" and DESCENDING by the "CustomerName" column:
+Example
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+
+
+AND: 
+Select all customers where Country is "Spain" AND CustomerName starts with the letter 'G':
+SELECT *
+FROM Customers
+WHERE Country = 'Spain' AND CustomerName LIKE 'G%';
+
+OR:
+Select all Spanish customers that starts with either "G" or "R":
+SELECT * FROM Customers
+WHERE Country = 'Spain' AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');
+
+SELECT * FROM Customers
+WHERE City = 'Berlin' OR CustomerName LIKE 'G%' OR Country = 'Norway';
+
+
+The NOT Operator
+The NOT operator is used in the WHERE clause to return all records that DO NOT match the specified criteria. It reverses the result of a condition from true to false and vice-versa.
+The following SQL selects all customers that are NOT from Spain:
+Select only the customers that are NOT from Spain:
+SELECT * FROM Customers
+WHERE NOT Country = 'Spain';
+
+The NOT operator is also used in combination with other operators to exclude data, such as:
+NOT LIKE
+NOT BETWEEN
+NOT IN
+IS NOT NULL
+NOT EXISTS
+
+Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+
+Select customers that does not start with the letter 'A':
+SELECT * FROM Customers
+WHERE CustomerName NOT LIKE 'A%';
+
+Select customers that are not from Paris or London:
+SELECT * FROM Customers
+WHERE City NOT IN ('Paris', 'London');
+
+Select customers with a CustomerId not greater than 50:
+SELECT * FROM Customers
+WHERE NOT CustomerID > 50;

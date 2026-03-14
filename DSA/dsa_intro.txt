@@ -1,0 +1,31 @@
+Data Structures is about how data can be stored in different structures.
+Algorithms is about how to solve different problems, often by searching through and manipulating data structures.
+
+In Computer Science there are two different kinds of data structures:
+-Primitive Data Structures are basic data structures provided by programming languages to represent single values, such as integers, floating-point numbers, characters, and booleans.
+-Abstract Data Structures are higher-level data structures that are built using primitive data types and provide more complex and specialized operations. Some common examples of abstract data structures include arrays, linked lists, stacks, queues, trees, and graphs.
+
+An algorithm is a set of step-by-step instructions to solve a given problem or achieve a specific goal.
+Algorithm examples:
+Finding the fastest route in a GPS navigation system
+Navigating an airplane or a car (cruise control)
+Finding what users search for (search engine)
+Sorting, for example sorting movies by rating
+
+Data Structures together with Algorithms
+Data structures and algorithms (DSA) go hand in hand. A data structure is not worth much if you cannot search through it or manipulate it efficiently using algorithms, and the algorithms in this tutorial are not worth much without a data structure to work on.
+
+By understanding DSA, you can:
+Decide which data structure or algorithm is best for a given situation.
+Make programs that run faster or use less memory.
+Understand how to approach complex problems and solve them in a systematic way.
+
+Terms:
+-Algorithm:	A set of step-by-step instructions to solve a specific problem.
+-Data Structure:	A way of organizing data so it can be used efficiently. Common data structures include arrays, linked lists, and binary trees.
+-Time Complexity:	A measure of the amount of time an algorithm takes to run, depending on the amount of data the algorithm is working on.
+-Space Complexity:	A measure of the amount of memory an algorithm uses, depending on the amount of data the algorithm is working on.
+-Big O Notation:	A mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. Used in this tutorial to describe the time complexity of an algorithm.
+-Recursion:	A programming technique where a function calls itself.
+-Divide and Conquer:	A method of solving complex problems by breaking them into smaller, more manageable sub-problems, solving the sub-problems, and combining the solutions. Recursion is often used when using this method in an algorithm.
+-Brute Force: A simple and straight forward way an algorithm can work by simply trying all possible solutions and then choosing the best one.

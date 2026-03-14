@@ -1,0 +1,24 @@
+'''
+Polymorphism, Inheritance, Encapsulation and Abstraction (PIE-A)
+
+1) Polymorphism:
+Meaning: "Many forms" — same method name can behave differently depending on the actual object type
+Achieved via method overriding and interfaces/abstract classes
+Use case: Flexibility, easier to extend code later
+
+2)Inheritance
+Meaning: A child class can inherit properties and methods from a parent class
+Allows "is-a" relationships
+Use case: Code reuse, hierarchy, less duplication
+
+3)Encapsulation
+Meaning: Bundle data + behavior (fields + methods) together in a class
+Hide internal details using access modifiers (private/protected/public)
+Use case: Data protection, controlled access, easier maintenance
+
+4)Abstraction
+Meaning: Hide complex implementation details, show only what is necessary
+Usually done with abstract classes or interfaces
+Use case: Simpler interface for users, reduces complexity
+'''
+

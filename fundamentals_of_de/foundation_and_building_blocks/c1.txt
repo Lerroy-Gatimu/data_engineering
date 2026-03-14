@@ -1,0 +1,30 @@
+Data engineering is the development, implementation, and maintenance of systems
+and processes that take in raw data and produce high-quality, consistent information
+that supports downstream use cases, such as analysis and machine learning. Data engi‐
+neering is the intersection of security, data management, DataOps, data architecture,
+orchestration, and software engineering. A data engineer manages the data engineering
+lifecycle, beginning with getting data from source systems and ending with serving
+data for use cases, such as analysis or machine learning.
+
+The stages of the data
+engineering lifecycle are as follows:
+• Generation
+• Storage
+• Ingestion
+• Transformation
+• Serving
+The data engineering lifecycle also has a notion of undercurrents—critical ideas across
+the entire lifecycle. These include security, data management, DataOps, data architec‐
+ture, orchestration, and software engineering. 
+
+Evolution of the Data Engineer
+History doesn’t repeat itself, but it rhymes.
+—A famous adage often attributed to Mark Twain
+
+-massively parallel processing (MPP) databases that use multiple processors to crunch large
+amounts of data coming on the market and supporting unprecedented volumes
+of data.
+
+The new generation of the systems must be cost-effective, scalable, available, and reliable
+A famous and succinct description of big data is the three Vs of data: velocity, variety, and volume
+

@@ -1,0 +1,10 @@
+The big idea of this book is the data engineering lifecycle: data generation, storage,
+ingestion, transformation, and serving.
+
+One thing to note: we unapologetically take a cloud-first approach. We view the
+cloud as a fundamentally transformative development that will endure for decades;
+most on-premises data systems and workloads will eventually move to cloud hosting.
+We assume that infrastructure and systems are ephemeral and scalable, and that data
+engineers will lean toward deploying managed services in the cloud. That said, most
+concepts in this book will translate to non-cloud environments.
+

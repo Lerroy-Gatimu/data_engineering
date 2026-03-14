@@ -1,0 +1,3 @@
+It's a python library for analyzing data
+Pandas is like Excel, but in python
+
